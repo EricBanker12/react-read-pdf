@@ -1,6 +1,6 @@
 {
   "name": "react-read-pdf-b",
-  "version": "2.0.9",
+  "version": "2.0.9-fixed",
   "description": "a mobile-friendly  PDF Reader in browser for React",
   "keywords": [
     "react",
