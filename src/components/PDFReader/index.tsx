@@ -1,6 +1,4 @@
 import * as React from "react";
-import * as CSSModules from "react-css-modules";
-import * as styles from "./index.less";
 import * as pdfjsLib from "pdfjs-dist";
 // The workerSrc property shall be specified.
 pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.550/pdf.worker.js";
@@ -163,7 +161,7 @@ export class PDFReader extends React.Component<IProps, IStates> {
         let tempArr = new Array(totalPage);
         tempArr.fill(0);
         return (
-           <div style={style} className={styles["pdf__container"]}>
+           <>
              {
                showAllPage ? <React.Fragment>
                               {
@@ -175,7 +173,7 @@ export class PDFReader extends React.Component<IProps, IStates> {
                           :
                           <canvas ref={this.canvas}/>
              }
-           </div>
+           </>
         );
     }
 }
